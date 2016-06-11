@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>nav</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.rel{
+			position: relative;
+		}
+		.abo{
+			position: absolute;
+		}
+		#nav{
+			width: 600px;
+			height: 40px;
+			background-color: #eee;
+			margin: 0 auto;
+		}
+		ul{
+			list-style: none;
+
+		}
+		.lev-1 li{
+			float: left;
+			line-height: 40px;
+			height: 40px;
+		}
+		a{
+			text-decoration: none;
+			color: #000;
+			display: block;
+			padding: 0 20px;
+
+		}
+		a:hover{
+
+			color: #FFF;
+			background-color: #666;
+		}
+		.lev-2{
+			left: 0px;
+			top: 40px;
+			display: none;
+		}
+		.lev-2 li{
+			float: none;
+			background-color: #eee;
+			margin-top: 2px;
+		}
+		.lev-2 li a:hover{
+			background-color: #06f;
+		}
+		.lev-1 li:hover .lev-2{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div id="nav">
+		<ul class="lev-1">
+			<li><a href="#">首页</a></li>
+			<li class="rel"><a href="#">课程</a>
+				<ul class="lev-2 abo">
+					<li><a href="#">Java</a></li>
+					<li><a href="#">PHP</a></li>
+					<li><a href="#">HTML</a></li>
+					<li><a href="#">Jquary</a></li>
+				</ul>
+			</li>
+			<li><a href="#">讨论</a></li>
+			<li><a href="#">联系我们</a></li>
+		</ul>
+	</div>
+</body>
+</html>
